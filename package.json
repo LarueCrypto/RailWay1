@@ -19,7 +19,7 @@
     "dev": "tsx watch --env-file=.env server/index.ts",
     "build": "tsx script/build.ts && vite build",
     "start": "NODE_ENV=production tsx server/index.ts",
-    "postinstall": "npm run build",
+    "esbuild": "^0.19.0"
     "db:push": "drizzle-kit push",
     "db:migrate": "drizzle-kit push && drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
