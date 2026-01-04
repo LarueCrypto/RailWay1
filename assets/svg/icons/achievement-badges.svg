@@ -1,0 +1,67 @@
+<svg width="800" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Achievement Badges Collection -->
+  <defs>
+    <linearGradient id="commonBadge">
+      <stop offset="0%" style="stop-color:#9CA3AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B7280;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rareBadge">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="epicBadge">
+      <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="legendaryBadge">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    <filter id="badgeGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Common Badge -->
+  <g transform="translate(100, 100)">
+    <circle r="80" fill="url(#commonBadge)" stroke="#9CA3AF" stroke-width="4"/>
+    <path d="M 0 -50 L 15 -10 L 55 -10 L 25 15 L 40 55 L 0 30 L -40 55 L -25 15 L -55 -10 L -15 -10 Z" 
+          fill="#F3F4F6" opacity="0.8"/>
+    <text x="0" y="100" text-anchor="middle" fill="#374151" font-size="16" font-weight="bold">COMMON</text>
+  </g>
+  
+  <!-- Rare Badge -->
+  <g transform="translate(300, 100)">
+    <circle r="80" fill="url(#rareBadge)" stroke="#60A5FA" stroke-width="4" filter="url(#badgeGlow)"/>
+    <path d="M 0 -50 L 15 -10 L 55 -10 L 25 15 L 40 55 L 0 30 L -40 55 L -25 15 L -55 -10 L -15 -10 Z" 
+          fill="#DBEAFE" opacity="0.9"/>
+    <text x="0" y="100" text-anchor="middle" fill="#1E40AF" font-size="16" font-weight="bold">RARE</text>
+  </g>
+  
+  <!-- Epic Badge -->
+  <g transform="translate(500, 100)">
+    <circle r="80" fill="url(#epicBadge)" stroke="#A78BFA" stroke-width="4" filter="url(#badgeGlow)"/>
+    <path d="M 0 -50 L 15 -10 L 55 -10 L 25 15 L 40 55 L 0 30 L -40 55 L -25 15 L -55 -10 L -15 -10 Z" 
+          fill="#EDE9FE" opacity="0.9"/>
+    <circle cx="0" cy="-25" r="8" fill="#EDE9FE" opacity="0.6"/>
+    <circle cx="-20" cy="10" r="6" fill="#EDE9FE" opacity="0.5"/>
+    <circle cx="20" cy="10" r="6" fill="#EDE9FE" opacity="0.5"/>
+    <text x="0" y="100" text-anchor="middle" fill="#5B21B6" font-size="16" font-weight="bold">EPIC</text>
+  </g>
+  
+  <!-- Legendary Badge -->
+  <g transform="translate(700, 100)">
+    <circle r="80" fill="url(#legendaryBadge)" stroke="#FBBF24" stroke-width="4" filter="url(#badgeGlow)"/>
+    <path d="M 0 -50 L 15 -10 L 55 -10 L 25 15 L 40 55 L 0 30 L -40 55 L -25 15 L -55 -10 L -15 -10 Z" 
+          fill="#FEF3C7" opacity="1"/>
+    <circle cx="0" cy="-25" r="10" fill="#FEF3C7" opacity="0.8" filter="url(#badgeGlow)"/>
+    <circle cx="-25" cy="10" r="8" fill="#FEF3C7" opacity="0.7" filter="url(#badgeGlow)"/>
+    <circle cx="25" cy="10" r="8" fill="#FEF3C7" opacity="0.7" filter="url(#badgeGlow)"/>
+    <circle cx="0" cy="30" r="6" fill="#FEF3C7" opacity="0.6" filter="url(#badgeGlow)"/>
+    <text x="0" y="100" text-anchor="middle" fill="#92400E" font-size="16" font-weight="bold">LEGENDARY</text>
+  </g>
+</svg>
