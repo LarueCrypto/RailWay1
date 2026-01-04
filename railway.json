@@ -10,27 +10,3 @@
     "restartPolicyMaxRetries": 10
   }
 }
-```
-
----
-
-## 🎉 **What Will Happen:**
-
-After you push the changes:
-1. ✅ Railway detects the Dockerfile
-2. ✅ Switches from Nixpacks to Docker
-3. ✅ Runs `npm install` (not npm ci)
-4. ✅ Builds successfully
-5. ✅ Your app goes live!
-
-**Build time:** ~5 minutes
-
----
-
-## 📊 **Expected Success Log:**
-```
-Using Dockerfile ✓
-Step 1/9: FROM node:18-slim ✓
-Step 5/9: RUN npm install --legacy-peer-deps ✓
-Step 7/9: RUN npm run build ✓
-Successfully deployed! ✓
