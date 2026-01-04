@@ -2,7 +2,7 @@
 nixPkgs = ["nodejs-18_x", "postgresql"]
 
 [phases.install]
-cmds = ["npm ci"]
+cmds = ["npm install"]  # Change from "npm ci"
 
 [phases.build]
 cmds = ["npm run build"]
